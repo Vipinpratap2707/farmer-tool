@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Tool Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Farm Tool Rentals</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="about" class="intro">
+        <h2>Welcome to Farm Tool Rentals</h2>
+        <p>We provide affordable rental options for farmers who need access to tools for their farms but cannot afford to buy them. Our mission is to support farmers in their hard work.</p>
+    </section>
+
+    <!-- Tool Catalog -->
+    <section id="tools" class="tools">
+        <h2>Available Tools for Rent</h2>
+        <div class="tool-list">
+            <div class="tool-item">
+                <img src="https://assets.khetigaadi.com/tr:h-200,w-330/new-tractor/Swaraj-855-FE1732352123_zh8kn4U3B.png" alt="Tractor">
+                <h3>Tractor</h3>
+                <p>Rent a tractor for tilling, planting, and more.</p>
+                <button onclick="showDetails('Tractor')">Rent Now</button>
+            </div>
+            <div class="tool-item">
+                <img src="https://www.universalimplements.com/img/products/Mounted-Disc-Plough/1-Side.jpg" alt="Plow">
+                <h3>Plow</h3>
+                <p>Rent a plow for preparing your soil.</p>
+                <button onclick="showDetails('Plow')">Rent Now</button>
+            </div>
+            <div class="tool-item">
+                <img src="https://5.imimg.com/data5/GLADMIN/Default/2022/7/DS/GS/HQ/91623/laser-land-leveler-250x250.jpg" alt="Computer karha">
+                <h3>Computer karha</h3>
+                <p>Rent a Computer karha for preparing your soil.</p>
+               
+                <button onclick="showDetails('Computer karha')">Rent Now</button>
+            </div>
+            <div class="tool-item">
+                <img src="https://www.jangeer.com/img/89/posts/1705918080Combine-Harvester.jpg" alt="Harvester">
+                <h3>Harvester</h3>
+                <p>Rent a Harvester for preparing your soil.</p>
+               
+                <button onclick="showDetails('Computer karha')">Rent Now</button>
+            </div>
+            <div class="tool-item">
+                <img src="https://solisworld.com/wp-content/uploads/2020/04/smart-series-img.jpg" alt="Rootaweter">
+                <h3>Rootaweter</h3>
+                <p>Rent a Rootaweter for preparing your soil.</p>
+               
+                <button onclick="showDetails('Computer karha')">Rent Now</button>
+            </div>
+            
+            <!-- Add more tools here -->
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tool">Select Tool:</label>
+            <select id="tool" name="tool" required>
+                <option value="Tractor">Tractor</option>
+                <option value="Plow">Plow</option>
+                <option value="Computer Karha">Computer Karha</option>
+                <option value="Harvester">Harvester</option>
+                <option value="Rootweter">Rootweter</option>
+                <!-- Add more tool options here -->
+            </select>
+
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farm Tool Rentals | Contact us at <a href="mailto:info@farmtools.com">info@farmtools.com</a></p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
